@@ -1,0 +1,33 @@
+/*SCROLL*/
+.scrollspy-example{
+    margin-top: 5%;
+}
+
+/*HOME*/
+.home{
+    height: 100vh;
+}
+#homeText{
+    position: relative;
+    top: 25%;
+}
+
+/*ABOUT*/
+.about{
+    height: 100vh;
+}
+
+/*EXPeRiENCE*/
+.exp{
+    height: 100vh;
+}
+
+/*EDUCATION*/
+.education{
+    height: 100vh;
+}
+
+/*PROJECTS*/
+.projects{
+    height: 100vh;
+}
