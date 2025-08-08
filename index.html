@@ -7,38 +7,38 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body class="bg-dark">
     <!--MENU-->
-    <nav id="navbar-example2" class="navbar fixed-top bg-light px-3 mb-3">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <ul class="nav nav-pills">
+    <nav id="navbar-example2" class="navbar fixed-top bg-dark px-3 mb-3">
+    <a class="navbar-brand text-white" href="#">CV Beatriz Costa</a>
+    <ul class="nav nav-underline text-white">
         <li class="nav-item">
         <a class="nav-link" href="#scrollspyHome">Home</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="#scrollspyAbout">About</a>
+        <a class="nav-link" href="#scrollspyAbout">Sobre</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="#scrollspyExp">Experience</a>
+        <a class="nav-link" href="#scrollspyExp">Experiências</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="#scrollspyEduc">Education</a>
+        <a class="nav-link" href="#scrollspyEduc">Formação</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="#scrollspyProjects">Projects</a>
+        <a class="nav-link" href="#scrollspyProjects">Projetos</a>
         </li>
     </ul>
     </nav>
 
     <!--MAIN SCROLL-->
-    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-dark p-3 rounded-2" tabindex="0">
         
         <!--HOME-->
         <div class="home" id="scrollspyHome">
             <div class="p-5 text-center bg-body-tertiary rounded-3" id="homeText"> 
-                <h1 class="text-body-emphasis">Basic jumbotron</h1> 
-                <p class="lead">
-                    This is a simple Bootstrap jumbotron that sits within a <code>.container</code>, recreated with built-in utility classes.
+                <h1 class="text-body-emphasis">Beatriz Costa</h1> 
+                <p class="lead" id="homeP">
+                    Front End Developer | Web Design | UX/UI Design 
                 </p> 
             </div>
         </div>
@@ -46,42 +46,46 @@
         <!--ABOUT-->
         <div class="about" id="scrollspyAbout">
             <div class="container px-4 py-5"> 
-                <h2 class="pb-2 border-bottom">Features with title</h2> 
+                <h2 class="pb-2 border-bottom" id="aboutTitle">Sobre</h2> 
                 <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5"> 
-                    <div class="col d-flex flex-column align-items-start gap-2"> 
-                        <h2 class="fw-bold text-body-emphasis">Left-aligned title explaining these awesome features</h2> 
-                        <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> 
-                        <a href="#" class="btn btn-primary btn-lg">Primary button</a> 
+                    <div class="col d-flex flex-column align-items-start gap-2" id="aboutText"> 
+                        <h2 class="fw-bold text-body-emphasis">Front End Developer | Web Design | UX/UI Design</h2> 
+                        <p class="text-body-secondary">Desenvolvedora Front End, com 5 anos de experiência, 
+                            trabalhando principalmente com React, JavaScript. Experiência também com Web Design e desenvolvimento
+                            de landing pages com Wordpress e Elementor. Aprendendo UX/UI Design e procurando aprimorar os meus conhecimentos.
+                        </p> 
+                        <div id="aboutLinks">
+                            <a href="https://www.linkedin.com/in/beatriz-aline-costa/" target="_blank" class="btn btn-outline-light">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                </svg>
+                            LinkedIn
+                            </a>
+                            <a href="https://github.com/beatrizalinecosta" target="_blank" class="btn btn-outline-light">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                </svg>
+                            GitHub
+                            </a> 
+                        </div>
                     </div> 
                     <div class="col"> 
                         <div class="row row-cols-1 row-cols-sm-2 g-4"> 
                             <div class="col d-flex flex-column gap-2"> 
-                                <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"> 
-                                    <svg class="bi" width="1em" height="1em" aria-hidden="true"> <use xlink:href="#collection"></use> </svg> 
-                                </div> 
-                                <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4> 
-                                <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p> 
+                                <h4 class="fw-semibold mb-0 text-body-emphasis">Front End Skills</h4> 
+                                <img src="https://skillicons.dev/icons?i=react,vite,nextjs,angular,django" />
                             </div> 
-                            <div class="col d-flex flex-column gap-2"> 
-                                <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"> 
-                                    <svg class="bi" width="1em" height="1em" aria-hidden="true"> <use xlink:href="#gear-fill"></use> </svg> 
-                                </div> 
-                                <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4> 
-                                <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p> 
+                            <div class="col d-flex flex-column gap-2">                             
+                                <h4 class="fw-semibold mb-0 text-body-emphasis">Linguagens</h4> 
+                                <img src="https://skillicons.dev/icons?i=html,css,js,ts,nodejs,py" />
                             </div> 
-                            <div class="col d-flex flex-column gap-2"> 
-                                <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"> 
-                                    <svg class="bi" width="1em" height="1em" aria-hidden="true"> <use xlink:href="#speedometer"></use> </svg> 
-                                </div> 
-                                <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4> 
-                                <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p> 
+                            <div class="col d-flex flex-column gap-2">                                 
+                                <h4 class="fw-semibold mb-0 text-body-emphasis">Ferramentas</h4> 
+                                <img src="https://skillicons.dev/icons?i=bootstrap,materialui,tailwind,wordpress,git,vscode" />
                             </div> 
-                            <div class="col d-flex flex-column gap-2"> 
-                                <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"> 
-                                    <svg class="bi" width="1em" height="1em" aria-hidden="true"> <use xlink:href="#table"></use> </svg> 
-                                </div> 
-                                <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4> 
-                                <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p> 
+                            <div class="col d-flex flex-column gap-2">                                  
+                                <h4 class="fw-semibold mb-0 text-body-emphasis">UX Design</h4> 
+                                <img src="https://skillicons.dev/icons?i=figma,ai" style="height: 27%;"/>
                             </div> 
                         </div> 
                     </div> 
@@ -97,24 +101,71 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Analista de Engenharia de TI Junior
+                            Analista de Engenharia de TI Jr | Itaú Unibanco
                         </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <ul class="list-unstyled">
+                                <li>jan/2022 - abr/2024</li>
+                                <li>Trabalhei como Desenvolvedora Front End em portais internos da empresa, otimizando o dia a dia das equipes que utilizam Metodologias Ágeis. Desenvolvi projetos utilizando React e Design UX. Também era parte da equipe que desenvolvia soluções na plataforma ServiceNow, utilizando Angular e JavaScript.</li>                                
+                                <p></p>
+                                <li>Atuando em um time ágil, trabalhei na implementação do Self-Service Portal da empresa.
+                                    <ul>
+                                    <li>Desenvolvi widgets personalizados usando Service Portal, HTML, CSS e AngularJS.</li>
+                                    <li>Modelei tabelas customizadas e implementei ACLs para controle de acesso.</li>
+                                    <li>Redução de 50% nas solicitações de TI via e-mail em apenas 2 meses.</li>
+                                    </ul>
+                                </li>
+                                <p></p>
+                                <li>Responsável pela criação de Design System utilizado pelo time de desenvolvimento de portais ServiceNow
+                                    <ul>
+                                    <li>Desenvolvimento utilizando HTML/CSS e JavaScript.</li>
+                                    <li>Conduzi pesquisa com usuários, mapeamento de jornada e testes de usabilidade.</li>
+                                    <li>Criei protótipos em Figma para garantir fidelidade na entrega.</li>
+                                    </ul>
+                                </li>
+                                <p></p>
+                                <li>Implementei customizações e desenvolvimento de soluções na plataforma ServiceNow para portal interno de Metodologia Ágil.
+                                    <ul>
+                                    <li>Criei Workflows personalizados usando Flow Designer e Business Rules.</li>
+                                    <li>Desenvolvi Custom Apps com ServiceNow Studio, scripts em JavaScript (Glide API) e UI Policies.</li>
+                                    <li>Redução de 70% no tempo de abertura e resolução de chamados internos.</li>
+                                    <li>Criação de dashboards em Performance Analytics que ajudaram a reduzir SLA violados em 35%.</li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Estágio
+                            Estágio | Itaú Unibanco
                         </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <ul class="list-unstyled">
+                                <li>jan/2020 - dez/2021</li>
+                                <p></p>
+                                <li>Desenvolvi portal interno utilizando framework Django.
+                                    <ul>
+                                    <li>Estruturei toda a camada de front-end priorizando performance e SEO.</li>
+                                    <li>Criei testes automatizados com Jest e React Testing Library.</li>
+                                    </ul>
+                                </li>
+                                <p></p>
+                                <li>Participei do desenvolvimento de uma plataforma interna de cursos online.
+                                    <ul>
+                                    <li>Implementei interfaces responsivas e acessíveis usando React, TypeScript e TailwindCSS.</li>
+                                    <li>Utilizei React Query para otimizar chamadas à API e melhorar a performance.</li>
+                                    <li>Trabalhei em colaboração com o time de UX para transformar wireframes do Figma em componentes reutilizáveis.</li>
+                                    <li>Redução de 40% no tempo de carregamento das páginas.</li>
+                                    <li>Aumento de 30% no engajamento dos usuários nos testes A/B.</li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                         </div>
                     </div>
@@ -125,10 +176,10 @@
         <!--EDUCATION-->
         <div class="education" id="scrollspyEduc"> 
             <div class="container px-4 py-5">
-                <h2 class="pb-2 border-bottom">EDUCAÇÃO</h2> 
+                <h2 class="pb-2 border-bottom">FORMAÇÃO</h2> 
                 <ul class="list-group">
                     <li class="list-group-item">MBA em Tecnologia de Informação | Instituto Mauá de Tecnologia | Fev/2022 - Jun/2024</li>
-                    <li class="list-group-item">Análise e Desenvolvimento de Sistemas | FATEC São Caetano do Sul | </li>                
+                    <li class="list-group-item">Análise e Desenvolvimento de Sistemas | FATEC São Caetano do Sul | Ag0/2017 - Dez/2021</li>                
                 </ul>
             </div>
         </div>
@@ -141,30 +192,110 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="card text-center">
-                            <h5 class="card-header">Featured</h5>
+                            <h5 class="card-header">CSV to JSON Converter</h5>
                             <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title">Conversor de arquivos CSV/JSON</h5>
+                                <p class="card-text">Funcionalidades: Usuário pode converter arquivos CSV para JSON, ou JSON para CSV. O aplicativo permite que seja inserido um valor por input ou upload de arquivo, e converte para o tipo desejado. 
+                                    O resultado pode ser colado na área de transferência ou baixado diretamente.
+                                </p>
+                                <img src="https://skillicons.dev/icons?i=react,js,html,css,bootstrap" />
+                                <div id="buttonProject">
+                                    <a href="https://beatrizalinecosta.github.io/csvToJson/" target="_blank" class="btn" id="btnProjects">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"/>
+                                        </svg>
+                                    Demo
+                                    </a>
+                                    <a href="https://github.com/beatrizalinecosta/csvToJson" target="_blank" class="btn" id="btnProjects">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                        </svg>
+                                    GitHub
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="card">
+                        <div class="card text-center">
+                            <h5 class="card-header">Password Generator</h5>
                             <div class="card-body">
-                                This is some text within a card body.
+                                <h5 class="card-title">Gerador de Senha</h5>
+                                <p class="card-text">Funcionalidades: Gera senhas aleatórias, de acordo com as opções escolhidas em checkboxs, pode habilitar senhas com Caracter especiais, números e letras maiúsculas/minúsculas. 
+                                    Guarda as últimas 5 senhas geradas. Com Modo Escuro.
+                                </p>
+                                <img src="https://skillicons.dev/icons?i=react,ts,html,css,bootstrap" />
+                                <div id="buttonProject">
+                                    <a href="https://beatrizalinecosta.github.io/passwordGenerator/" target="_blank" class="btn" id="btnProjects">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"/>
+                                        </svg>
+                                    Demo
+                                    </a>
+                                    <a href="https://github.com/beatrizalinecosta/passwordGenerator" target="_blank" class="btn" id="btnProjects">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                        </svg>
+                                    GitHub
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="card">
+                        <div class="card text-center">
+                            <h5 class="card-header">Toolbox App</h5>
                             <div class="card-body">
-                                This is some text within a card body.
+                                <h5 class="card-title">Caixa de Ferramentas</h5>
+                                <p class="card-text">Uma caixa de ferramentas com as seguintes funcionalidades: Calculadora, Stopwatch, Relógio Pomodoro, 
+                                    Convesão de Número Binário para Decimal e Gerador de texto Lorem Ipsum.
+                                </p>
+                                <img src="https://skillicons.dev/icons?i=react,ts,html,css,bootstrap" />
+                                <div id="buttonProject">
+                                    <a href="https://beatrizalinecosta.github.io/toolbox/" target="_blank" class="btn" id="btnProjects">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"/>
+                                        </svg>
+                                    Demo
+                                    </a>
+                                    <a href="https://github.com/beatrizalinecosta/toolbox" target="_blank" class="btn" id="btnProjects">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                        </svg>
+                                    GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card text-center">
+                            <h5 class="card-header">To Do Lists</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Listas To Do</h5>
+                                <p class="card-text">Permite que o usuário possa criar quantas listas desejar. 
+                                    Dentro da lista pode criar colunas customizavéis, com drag and drop nos cards das tarefas.
+                                </p>
+                                <img src="https://skillicons.dev/icons?i=react,js,html,css,bootstrap" />
+                                <div id="buttonProject">
+                                    <a href="https://beatrizalinecosta.github.io/mylists_todo_app/" target="_blank" class="btn" id="btnProjects">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"/>
+                                        </svg>
+                                    Demo
+                                    </a>
+                                    <a href="https://github.com/beatrizalinecosta/mylists_todo_app" target="_blank" class="btn" id="btnProjects">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                        </svg>
+                                    GitHub
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" fill="currentColor">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
@@ -179,77 +310,28 @@
     </div>
 
     <!--FOOTER-->
-    <div class="container">
-    <footer class="py-5"> 
-        <div class="row"> 
-            <div class="col-6 col-md-2 mb-3"> 
-                <h5>Section</h5> 
-                <ul class="nav flex-column"> 
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
-                    </li> 
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
-                    </li> 
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
-                    </li> 
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-                    </li> 
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">About</a>
-                    </li> 
-                </ul> 
+    <div class="container-fluid bg-light">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-5 border-top"> 
+            <div class="col-md-4 d-flex align-items-center">  
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Beatriz Costa, Portfolio</span> 
             </div> 
-            <div class="col-6 col-md-2 mb-3"> 
-                <h5>Section</h5> 
-                <ul class="nav flex-column"> 
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
-                    </li> 
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
-                    </li> 
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
-                    </li> 
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-                    </li> 
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">About</a>
-                    </li> 
-                </ul> 
-            </div> 
-            <div class="col-md-5 offset-md-1 mb-3"> 
-                <form> 
-                    <h5>Subscribe to our newsletter</h5> 
-                    <p>Monthly digest of what's new and exciting from us.</p> 
-                    <div class="d-flex flex-column flex-sm-row w-100 gap-2"> 
-                        <label for="newsletter1" class="visually-hidden">Email address</label> 
-                        <input id="newsletter1" type="email" class="form-control" placeholder="Email address"> 
-                        <button class="btn btn-primary" type="button">Subscribe</button> 
-                    </div> 
-                </form> 
-            </div> 
-        </div> 
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"> 
-            <p>© 2025 Company, Inc. All rights reserved.</p> 
-            <ul class="list-unstyled d-flex"> 
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex"> 
                 <li class="ms-3">
-                    <a class="link-body-emphasis" href="#" aria-label="Instagram">
-                        <svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg>
+                    <a class="text-body-secondary" href="https://github.com/beatrizalinecosta" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                        </svg>
                     </a>
                 </li> 
                 <li class="ms-3">
-                    <a class="link-body-emphasis" href="#" aria-label="Facebook">
-                        <svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#facebook"></use></svg>
+                    <a class="text-body-secondary" href="https://www.linkedin.com/in/beatriz-aline-costa/" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                        </svg>
                     </a>
                 </li> 
             </ul> 
-        </div> 
-    </footer>
+        </footer>
     </div>
 
     <!--bootstrap-->
