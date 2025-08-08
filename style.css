@@ -1,33 +1,88 @@
+h2{
+    color: #AA297B;
+}
+h4{
+    color: #AA297B;
+}
+p{
+    color: white;
+}
+
 /*SCROLL*/
 .scrollspy-example{
     margin-top: 5%;
 }
 
+/*NAVBAR*/
+.nav-link {
+    color: white;
+}
+.nav-link:hover,.nav-link:focus,.nav-link:active{
+    color: #AA297B;
+}
+
 /*HOME*/
 .home{
     height: 100vh;
+    background-color: #1E1C1E;
 }
 #homeText{
     position: relative;
     top: 25%;
+    color: #AA297B;
+}
+#homeP{
+    color: white;
 }
 
 /*ABOUT*/
 .about{
     height: 100vh;
+    background-color: #1E1C1E;
+}
+#aboutTitle{
+    color: #AA297B;
+}
+#aboutText{
+    color: white;
 }
 
 /*EXPeRiENCE*/
 .exp{
-    height: 100vh;
+    /*height: 100vh;*/
+    background-color: #1E1C1E;
+}
+.accordion-item{
+    background-color: #baabb8;
+    color: black;
+}
+.accordion-button,.accordion-header{
+    background-color: #a19aa0;
+    color: white;
 }
 
 /*EDUCATION*/
 .education{
-    height: 100vh;
+    /*height: 100vh;*/
+    background-color: #1E1C1E;
+}
+.list-group,.list-group-item{
+    background-color: #a19aa0;
+    color: white;
 }
 
 /*PROJECTS*/
 .projects{
-    height: 100vh;
+    /*height: 100vh;*/
+    background-color: #1E1C1E;
+}
+.card-text{
+    color: black;
+}
+#buttonProject{
+    padding-top: 15px;
+}
+#btnProjects{
+    background-color: #AA297B;
+    color: white;
 }
